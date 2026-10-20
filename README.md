@@ -34,19 +34,25 @@ The main design decisions included:
 
 The goal was to create a cleaner, more engaging website while
 keeping the content easy to understand and navigate.
-
 ## 3. Challenges Faced and Solutions
 
-One challenge was maintaining visual consistency across
-multiple HTML pages while updating the overall design.
+One challenge I faced was aligning the homepage hero section
+with the navigation and header content. The heading appeared
+too far to the left, creating an inconsistent layout.
 
-I addressed this by using a shared CSS stylesheet and applying
-consistent colours, spacing, typography, and layout rules.
+I encountered this while testing the redesigned homepage in
+the browser. On inspecting the HTML and CSS, I found that the
+hero section used a different container class from the one
+targeted by my existing CSS rules.
 
-Another challenge was ensuring that the website and its assets
-worked correctly after deployment using GitHub Pages. I
-checked the deployed website and verified that it loaded
-without visible glitches.
+To solve this, I identified the correct HTML class and adjusted
+the CSS selectors and container width so that the hero content
+aligned more consistently with the rest of the page. I then
+reloaded the website in the browser to verify the changes.
+
+This helped me understand the importance of matching CSS
+selectors to the actual HTML structure and testing layout
+changes in the browser.
 
 ## Technologies Used
 
